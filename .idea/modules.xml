@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/my-react-portfolio.iml" filepath="$PROJECT_DIR$/my-react-portfolio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/react-scoreboard.iml" filepath="$PROJECT_DIR$/react-scoreboard.iml" />
     </modules>
   </component>
 </project>

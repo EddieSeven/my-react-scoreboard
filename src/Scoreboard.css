@@ -1,0 +1,73 @@
+.Scoreboard {
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 400px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 450px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.main-container {
+  display: table;
+  table-layout: fixed;
+  border-spacing: 4px;
+  width: 100%;
+}
+
+.Sidebar-left {
+  display: table-cell;
+  width: 12%;
+  height: 100%;
+  background-color: darkgreen;
+}
+
+.Sidebar-right {
+  display: table-cell;
+  width: 12%;
+  height: 100%;
+  background-color: navy;
+}
+
+.center-board {
+  display: table-cell;
+  width: 70%;
+  background-color: bisque;
+}
+
+.score-box {
+  display: block;
+  text-align: center;
+}
+
+.Score-home, .Score-away, .versus {
+  display: inline-block;
+  margin: 20px;
+}
+
+.home-away {
+}
+
+.points {
+}
+
