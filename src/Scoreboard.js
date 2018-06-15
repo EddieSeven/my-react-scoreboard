@@ -19,7 +19,7 @@ class Scoreboard extends Component {
     return (
       <div className="Scoreboard">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="VersusBoard Logo" />
+            { /* <img src={logo} className="App-logo" alt="VersusBoard Logo" />*/ }
           <h1 className="App-title">VersusBoard</h1>
         </header>
 

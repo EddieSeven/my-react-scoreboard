@@ -10,6 +10,6 @@ registerServiceWorker();
 
 WebFont.load({
     google: {
-        families: ['Orbitron', 'Squada One', 'Wallpoet', 'Keania One', 'Kanit']
+        families: ['Bungee Inline', 'Cousine', 'Kanit']
     }
 })

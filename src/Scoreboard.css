@@ -1,6 +1,17 @@
+p, h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2em;
+  margin: 2px;
+}
+
 .Scoreboard {
   text-align: center;
   background-color: antiquewhite;
+  position: absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  overflow:hidden;
 }
 
 /* Boilerplate*/
@@ -11,7 +22,7 @@
 
 .App-header {
   background-color: #222;
-  height: 450px;
+  height: auto;
   padding: 20px;
   color: white;
 }
@@ -24,19 +35,13 @@
   font-size: large;
 }
 
-/* Logo Animation */
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
 /* Scoreboard */
 .main-container {
   display: table;
   table-layout: fixed;
   border-spacing: 4px;
   width: 100%;
-  height: 500px;
+  height: 100%;
 }
 
 .Sidebar-left, .Sidebar-right {
@@ -60,20 +65,23 @@
 }
 
 .Clock {
-  margin: 75px 20px 20px;
+  margin: 20% 20px 20px;
   font-size: 2.5em;
-  font-family: 'Wallpoet', sans-serif;
+  font-family: 'Cousine', sans-serif;
 }
 
 .score-box {
   display: block;
   text-align: center;
   height: auto;
+  width: auto;
+  font-family: 'Kanit';
+  margin: 10px 50px;
 }
 
-.Score-home, .Score-away, .versus {
+.Score-home, .Score-away {
   display: inline-block;
-  margin: 50px 50px 20px;
+  margin: 20px 50px;
   height: 150px;
 }
 
@@ -90,22 +98,51 @@
 }
 
 .versus {
+  display: inline-block;
+  margin: 20px;
+  height: 50px;
   font-size: 2.75em;
+}
+
+.Info-Panel {
+  margin: 20px;
+}
+
+.Info-Panel h2 {
+  font-family: 'Bungee Inline';
+}
+
+.Info-Panel p {
+  font-family: 'Bungee Inline';
+  font-size: 1.75em;
 }
 
 .info-container {
   display: inline-block;
   height: auto;
-  margin: 10px;
+
 }
 
 .info-container > div {
   display: inline-block;
   margin: 5px;
   padding: 5px;
-  height: 200px;
+  height: 125px;
   width: 15%;
   vertical-align: top;
+}
+
+.yard-line h1 {
+  font-family: 'Bungee Inline';
+  font-size: 3em;
+}
+
+.down p, .togo p {
+  font-size: 1.25em;
+}
+
+.down span, .togo span, .yard-line p {
+  font-size: .75em;
 }
 
 .quarter-container {
