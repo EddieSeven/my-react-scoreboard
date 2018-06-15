@@ -19,8 +19,8 @@ class Scoreboard extends Component {
     return (
       <div className="Scoreboard">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to my React Scoreboard!</h1>
+          <img src={logo} className="App-logo" alt="VersusBoard Logo" />
+          <h1 className="App-title">VersusBoard</h1>
         </header>
 
         <div className="main-container">
@@ -31,7 +31,7 @@ class Scoreboard extends Component {
 
               <div className="score-box">
                 <Score className="Score-home" teamLocality="HOME" />
-                  <div className="versus">VS.</div>
+                  <div className="versus">VS</div>
                 <Score className="Score-away" teamLocality="AWAY" />
               </div>
 

@@ -3,6 +3,7 @@
   background-color: antiquewhite;
 }
 
+/* Boilerplate*/
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 400px;
@@ -23,51 +24,93 @@
   font-size: large;
 }
 
+/* Logo Animation */
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
 
+/* Scoreboard */
 .main-container {
   display: table;
   table-layout: fixed;
   border-spacing: 4px;
   width: 100%;
+  height: 500px;
+}
+
+.Sidebar-left, .Sidebar-right {
+  display: table-cell;
+  width: 20%;
+  height: 100%;
 }
 
 .Sidebar-left {
-  display: table-cell;
-  width: 12%;
-  height: 100%;
   background-color: darkgreen;
 }
 
 .Sidebar-right {
-  display: table-cell;
-  width: 12%;
-  height: 100%;
   background-color: navy;
 }
 
 .center-board {
   display: table-cell;
-  width: 70%;
+  width: auto;
   background-color: bisque;
+}
+
+.Clock {
+  margin: 75px 20px 20px;
+  font-size: 2.5em;
+  font-family: 'Wallpoet', sans-serif;
 }
 
 .score-box {
   display: block;
   text-align: center;
+  height: auto;
 }
 
 .Score-home, .Score-away, .versus {
   display: inline-block;
-  margin: 20px;
+  margin: 50px 50px 20px;
+  height: 150px;
 }
 
 .home-away {
+  font-size: 1em;
 }
 
 .points {
+  font-size: 4em;
 }
+
+.Participant-Label {
+  font-size: 1.75em;
+}
+
+.versus {
+  font-size: 2.75em;
+}
+
+.info-container {
+  display: inline-block;
+  height: auto;
+  margin: 10px;
+}
+
+.info-container > div {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  height: 200px;
+  width: 15%;
+  vertical-align: top;
+}
+
+.quarter-container {
+
+}
+
+
 
