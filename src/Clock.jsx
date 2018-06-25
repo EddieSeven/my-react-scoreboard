@@ -7,7 +7,8 @@ class Clock extends Component {
         this.state = {
             time: {},
             seconds: 900,
-            pause: false
+            pause: false,
+            quarterExpired: false
         }
         this.timer = 0;
         this.startTimer = this.startTimer.bind(this);
@@ -36,6 +37,7 @@ class Clock extends Component {
         if (this.timer === 0) {
             this.timer = setInterval(this.countdown, this.state.seconds);
         }
+        this.setState({quarterExpired: true});
     }
 
     pauseTimer () {
@@ -63,6 +65,7 @@ class Clock extends Component {
 
             if (seconds === 0) {
                 clearInterval(this.timer);
+                this.setState({quarterExpired: false});
             }
         }
     }

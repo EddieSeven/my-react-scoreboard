@@ -16,12 +16,22 @@ class Score extends Component {
         this.setState({ points: this.state.points + 1 });
     }
 
+    handleTouchdown () {
+        this.setState({ points: this.state.points + 6 });
+    }
+
     render () {
         return (
             <div className={this.props.className}>
               <div className="home-away">{this.props.teamLocality}</div>
-              <div className="points" onClick={() => this.addPoint()}>{this.state.points}</div>
-              <ParticipantLabel />
+
+              <div className="points" onClick={ this.props.onClick }>
+
+                  {this.props.score}
+
+              </div>
+
+              <ParticipantLabel teamAbbrv={this.props.teamAbbrv} />
             </div>
         );
     }
