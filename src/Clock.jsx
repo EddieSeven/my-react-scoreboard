@@ -80,9 +80,11 @@ class Clock extends Component {
     render () {
         return (
             <div className="Clock">
-                <button onClick={this.startTimer}>Start Timer</button>
-                {this.state.time.m}:{this.prependZero(this.state.time.s)}
-                <button onClick={this.pauseTimer}>Pause Timer</button>
+                <button onClick={this.startTimer} id="play-button"><i className="fas fa-play"></i></button>
+                <div id="clock-background">
+                    {this.state.time.m}:{this.prependZero(this.state.time.s)}
+                </div>
+                <button onClick={this.pauseTimer} id="pause-button"><i className="fas fa-pause"></i></button>
             </div>
         );
     }

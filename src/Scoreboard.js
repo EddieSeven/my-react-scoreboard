@@ -108,6 +108,8 @@ class Scoreboard extends Component {
 
               </div>
 
+                <hr id="score-panel-split" />
+
               <InfoPanel
                 sport={this.state.sport}
                 homeTimeouts={this.state.homeTimeouts}

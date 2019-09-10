@@ -10,6 +10,6 @@ registerServiceWorker();
 
 WebFont.load({
     google: {
-        families: ['Bungee Inline', 'Cousine', 'Kanit']
+        families: ['Bungee Inline', 'VT323', 'Cousine', 'Kanit']
     }
 })
